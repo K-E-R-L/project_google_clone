@@ -19,7 +19,7 @@ export const Results = () => {
     }
   }, [searchTerm, location.pathname]);
 
-  if (loading) return <Loading />;
+  if (isLoading) return <Loading />;
 
   switch (location.pathname) {
     case '/search':
