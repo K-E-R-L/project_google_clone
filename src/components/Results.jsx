@@ -6,7 +6,7 @@ import { useStateContext } from '../contexts/StateContextProvider';
 import { Loading } from './Loading';
 
 export const Results = () => {
-  const { results, loading, getResults, searchTerm } = useStateContext();
+  const { results, isLoading, getResults, searchTerm } = useStateContext();
   const location = useLocation();
 
   useEffect(() => {
